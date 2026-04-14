@@ -12,6 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "*")
 public class OrderController {
 
     @Autowired
@@ -20,11 +21,11 @@ public class OrderController {
     @PostMapping("/order")
     public ResponseEntity<Map<String, String>> placeOrder(@Valid @RequestBody OrderDto orderDto) {
         orderService.saveOrder(orderDto);
-        
+
         Map<String, String> response = new HashMap<>();
         response.put("status", "success");
         response.put("message", "Order placed successfully");
-        
+
         return ResponseEntity.ok(response);
     }
 }
