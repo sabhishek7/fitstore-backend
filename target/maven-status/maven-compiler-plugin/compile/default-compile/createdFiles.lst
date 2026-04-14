@@ -1,8 +1,7 @@
+com\fitstore\dto\OrderDto.class
+com\fitstore\FitstoreApplication.class
+com\fitstore\exception\GlobalExceptionHandler.class
+com\fitstore\service\OrderService.class
 com\fitstore\entity\Order.class
 com\fitstore\repository\OrderRepository.class
-com\fitstore\controller\OrderController.class
-com\fitstore\FitstoreApplication.class
-com\fitstore\dto\OrderDto.class
-com\fitstore\exception\GlobalExceptionHandler.class
 com\fitstore\config\CorsConfig.class
-com\fitstore\service\OrderService.class
